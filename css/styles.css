@@ -67,7 +67,7 @@ figcaption {
 }
 
 #options {
-    width: 40%;
+    width: 45%;
     height: 100%;
     margin: auto;
     display: block;
@@ -87,7 +87,7 @@ figcaption {
 
 #card-details {
     display: none;
-    width: 40%;
+    width: 45%;
     height: 100%;
     margin: auto;
     padding-bottom: 5%;
