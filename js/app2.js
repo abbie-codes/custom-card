@@ -146,8 +146,7 @@ const cardNumber = document.getElementById("cnum");
 
 // Add space after every 4 numbers for card input field 
 cardNumber.onkeydown = function () {
-    if (cardNumber.value.length > 0) {
-
+    if (cardNumber.value.length > 0 && cardNumber.value.length < 28) {
         if (cardNumber.value.length % 4 == 0) {
             cardNumber.value += "    ";
         }
@@ -159,8 +158,7 @@ const sortCode = document.getElementById("scode");
 
 // Add line after every 2 numbers for sort code input field
 sortCode.onkeydown = function () {
-    if (sortCode.value.length > 0) {
-
+    if (sortCode.value.length > 0 && sortCode.value.length < 14) {
         if (sortCode.value.length % 2 == 0) {
             sortCode.value += " -  ";
         }
@@ -200,17 +198,20 @@ function showCardDetails () {
     cardDetails.style.display = "block";
 }
 
-//Define order number
-let orderNum = 0;
-
-//Define where to append order number
-const orderNumLocation = document.getElementById("order-number");
-console.log(orderNumLocation);
-
+//Show order confirmation window
 function showOrderConf () {
     orderConf.style.display = "block";
-    orderNum += 1;
-    orderNumLocation.innerText = "Order Number: #000000" + orderNum;
+}
+
+//Stop page from refreshing when form submitted
+const form = document.getElementById("form");
+function handleForm(event) { event.preventDefault(); } 
+form.addEventListener('submit', handleForm);
+
+//Show Order confirmation after alerting payment was processed. 
+function showButton() {
+    alert("Your payment for £29.99 was processed by CustomCard.")
+    showOrderConf();
 }
 
 
