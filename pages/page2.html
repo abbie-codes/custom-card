@@ -75,7 +75,7 @@
             </div>
 
             <div class="card-preview-image">
-                <img src="../img/cards/plant.png" height="350">
+                <img src="/img/cards/plants.png" height="350">
             </div>
 
             <div class="card-preview-image">
@@ -107,35 +107,35 @@
             </div>
 
             <div class="card-preview-image">
-                <img src="../img/cards/neon-pink.png" height="350">
+                <img src="../img/cards/neon-pink.png" height="350vh">
             </div>
 
             <div class="card-preview-image">
-                <img src="../img/cards/lime-green.png" height="350">
+                <img src="../img/cards/lime-green.png" height="350vh">
             </div>
 
             <div class="card-preview-image">
-                <img src="../img/cards/orange.png" height="350">
+                <img src="../img/cards/orange.png" height="350vh">
             </div>
 
             <div class="card-preview-image">
-                <img src="../img/cards/violet.png" height="350">
+                <img src="../img/cards/violet.png" height="350vh">
             </div>
 
             <div class="card-preview-image">
-                <img src="../img/cards/blue.png" height="350">
+                <img src="../img/cards/blue.png" height="350vh">
             </div>
 
             <div class="card-preview-image">
-                <img src="../img/cards/aqua.png" height="350">
+                <img src="../img/cards/aqua.png" height="350vh">
             </div>
 
             <div class="card-preview-image">
-                <img src="../img/cards/grey.png" height="350">
+                <img src="../img/cards/grey.png" height="350vh">
             </div>
 
             <div class="card-preview-image">
-                <img src="../img/cards/black.png" height="350">
+                <img src="../img/cards/black.png" height="350vh">
             </div>
         </div>
         <div id="options">
@@ -174,7 +174,7 @@
         </div>
         <div id="personal-details">
             <h2>YOUR PERSONAL DETAILS</h2>
-            <form method="post">
+            <form id="form" method="post" onsubmit="return showButton()">
                 <div class="form-field">
                     <label for="titles">Title:</label><br>
                     <input list="titles" required>
@@ -234,11 +234,11 @@
                 </div>
                 <div class="next-back-buttons">
                     <button onclick="showOptions()" class="button next">BACK</button>
-                    <input type="submit" onclick="showCardDetails()" class="button next" value="NEXT">
+                    <button class="button next" onclick="showCardDetails()">NEXT</button>
                 </div>
-            </form>
+
         </div>
-        
+
         </div>
         <div id="card-details">
             <h2>CARD DETAILS</h2>
@@ -259,7 +259,7 @@
             </div>
             <div class="form-field">
                 <label for="cnum">Card Number:</label><br>
-                <input type="text" id="cnum" name="cnum" maxlength="32" required><br>
+                <input type="text" id="cnum" name="cnum" maxlength="28" required><br>
             </div>
             <div class="card-details-quarter-input">
                 <div class="quarter-input">
@@ -284,8 +284,9 @@
             <h3 class="total">Total: £29.99</h3>
             <div class="next-back-buttons">
                 <button onclick="showPersonalDetails()" class="button next">BACK</button>
-                <input type="submit" onclick="showOrderConf()" class="button next" value="ORDER">
+                <input type="submit" class="button next" value="CHECK OUT">
             </div>
+            </form>
         </div>
         </div>
     </main>
