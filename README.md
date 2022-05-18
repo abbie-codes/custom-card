@@ -4,7 +4,7 @@ A customizable payment card website created for Code First Girls Web Development
 This website includes a minimalistic landing page, and a page that let's you build a payment card & input your personal details. 
 
 I have used buttons to navigate through the site and div's that are set to display "block" or display "none" so that you never navigate away from the HTML build page. 
-I have also included a pop up order confirmation feature that only appears when you click order.
+I have also included a pop up order confirmation feature that only appears when you click CHECK OUT and an alert that alerts you the payment has been taken. 
 
 I have created a slideshow of different card designs on the landing page using JS. 
 
