@@ -205,8 +205,10 @@ function showOrderConf () {
 
 //Stop page from refreshing when form submitted
 const form = document.getElementById("form");
+const formTwo = document.getElementById("form-page-two");
 function handleForm(event) { event.preventDefault(); } 
 form.addEventListener('submit', handleForm);
+formTwo.addEventListener('submit', handleForm);
 
 //Show Order confirmation after alerting payment was processed. 
 function showButton() {
