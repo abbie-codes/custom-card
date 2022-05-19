@@ -174,7 +174,7 @@
         </div>
         <div id="personal-details">
             <h2>YOUR PERSONAL DETAILS</h2>
-            <form id="form" method="post" onsubmit="return showButton()">
+            <form id="form" method="post" onsubmit="showCardDetails()">
                 <div class="form-field">
                     <label for="titles">Title:</label><br>
                     <input list="titles" required>
@@ -234,14 +234,16 @@
                 </div>
                 <div class="next-back-buttons">
                     <button onclick="showOptions()" class="button next">BACK</button>
-                    <button class="button next" onclick="showCardDetails()">NEXT</button>
+                    <input type="submit" class="button next" value="NEXT">
                 </div>
+            </form>
 
         </div>
 
         </div>
         <div id="card-details">
             <h2>CARD DETAILS</h2>
+            <form id="form-page-two" onsubmit="return showButton()">
             <div class="form-field">
                 <h3>Select your card provider:</h3>
                 <div class="vendor-radio">
