@@ -1,5 +1,6 @@
 # custom-card
-A customizable payment card website created for Code First Girls Web Development Final Project 
+A customizable payment card website created for Code First Girls Web Development Final Project. This project won the award for best project on my course!![custom-card](https://user-images.githubusercontent.com/100278218/174496062-07179ad2-e61b-4936-ab22-cbe16a4d0475.png)
+
 
 This website includes a minimalistic landing page, and a page that let's you build a payment card & input your personal details. 
 
