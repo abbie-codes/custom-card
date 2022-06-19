@@ -1,4 +1,5 @@
-(https://user-images.githubusercontent.com/100278218/174496062-07179ad2-e61b-4936-ab22-cbe16a4d0475.png)
+![custom-card](https://user-images.githubusercontent.com/100278218/174496105-42d227e0-5cb1-4f17-8957-2ef45a4786e9.png)
+
 
 # custom-card
 A customizable payment card website created for Code First Girls Web Development Final Project. This project won the award for best project on my course!![custom-card]
